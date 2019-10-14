@@ -13,6 +13,7 @@
         Resilio Sync
     </Description>
     <Registry>https://registry.hub.docker.com/u/ghifari160/resilio-sync</Registry>
+    <Repository>ghifari160/resilio-sync</Repository>
     <BindTime>true</BindTime>
     <Privileged>false</Privileged>
     <Environment/>
