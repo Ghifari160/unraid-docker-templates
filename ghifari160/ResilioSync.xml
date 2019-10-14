@@ -33,6 +33,11 @@
     </Networking>
     <Data>
         <Volume>
+            <HostDir>/mnt/user/sync/</HostDir>
+            <ContainerDir>/mnt/sync</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
             <HostDir>/mnt/user/appdata/resilio-sync</HostDir>
             <ContainerDir>/mnt/config</ContainerDir>
             <Mode>rw</Mode>
@@ -41,6 +46,10 @@
     <WebUI>http://[IP]:[PORT:8888]</WebUI>
 
     <Network Default="bridge">bridge</Network>
+
+    <Config Type="path" Name="Sync Directory" Target="/mnt/sync"
+    Default="/mnt/user/sync" Mode="rw" Display="always-hide" Required="true"
+    Description="Host path to be mounted as /mnt/sync in the container"/>
 
     <Config Type="port" Name="Web Interface Port" Target="8888" Default="8888"
     Mode="tcp" Display="always-hide" Required="true" Description="The web
