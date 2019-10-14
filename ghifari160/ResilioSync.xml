@@ -43,12 +43,13 @@
     <Network Default="bridge">bridge</Network>
 
     <Config Type="port" Name="Web Interface Port" Target="8888" Default="8888"
-    Mode="tcp" Display="always-hide" Required="true" Description="web interface
-    port">8888</Config>
+    Mode="tcp" Display="always-hide" Required="true" Description="The web
+    interface will be accessible from this port">8888</Config>
     <Config Type="port" Name="TCP File Transfer Port" Target="55555"
     Default="55555" Mode="tcp" Display="advanced-hide"
-    Required="true">55555</Config>
+    Required="true" Description="File transfer in TCP mode will occur on this port">55555</Config>
     <Config Type="path" Name="Config Storage Path" Target="/mnt/config"
     Default="/mnt/user/appdata/resilio-sync" Mode="rw" Display="advanced-hide"
-    Required="true">/mnt/user/appdata/resilio-sync</Config>
+    Required="true" Description="Directory for storing configuration
+    files">/mnt/user/appdata/resilio-sync</Config>
 </Container>
